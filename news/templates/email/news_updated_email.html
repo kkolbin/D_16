@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Новая новость: {{ news.title }}</title>
+</head>
+<body>
+    <h1>Новая новость: {{ news.title }}</h1>
+    <p>Здравствуйте, {{ username }},</p>
+    <p>Мы рады сообщить вам об обновлении новости в вашем любимом разделе:</p>
+    <li><a href="http://127.0.0.1:8000{{ news.get_absolute_url }}">{{ news.title }}</a></li>
+    <p>Спасибо за ваш интерес к нашему порталу.</p>
+</body>
+</html>
